@@ -38,14 +38,18 @@ function NestPlatform(log, config) {
 const setupConnection = function(config, log, verbose) {
     return new Promise(function (resolve, reject) {
         if (!config.access_token && (!config.email || !config.password)) {
-            log.error('You did not specify your Nest app credentials {\'email\',\'password\'}, or an access_token, in config.json');
-            reject({ code: 'no_credentials' });
+            reject('You did not specify your Nest app credentials {\'email\',\'password\'}, or an access_token, in config.json');
             return;
         }
 
-        const conn = new NestConnection(log, verbose);
-        conn.config = config;
-        conn.auth(config.email, config.password, config.pin, config.access_token).then(() => resolve(conn));
+        const conn = new NestConnection(config, log, verbose);
+        conn.auth().then(connected => {
+            if (connected) {
+                resolve(conn);
+            } else {
+                reject('Unable to connect to Nest service.');
+            }
+        });
     });
 };
 
