@@ -24,7 +24,7 @@ module.exports = function(homebridge) {
     ProtectAccessory = require('./lib/nest-protect-accessory.js')(exportedTypes); // eslint-disable-line global-require
     // CamAccessory = require('./lib/nest-cam-accessory.js')(exportedTypes); // eslint-disable-line global-require
 
-    homebridge.registerPlatform('homebridge-nest', 'Nest', NestPlatform);
+    homebridge.registerPlatform('nest', 'Nest', NestPlatform);
 };
 
 function NestPlatform(log, config) {
