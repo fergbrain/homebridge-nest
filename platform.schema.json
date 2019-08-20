@@ -21,6 +21,10 @@
                 "options": {
                     "hidden": true
                 }
+            },
+            "pin": {
+                "title": "Milti-Factor PIN",
+                "type": "number"
             }
         }
     }
