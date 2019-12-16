@@ -25,6 +25,23 @@
             "pin": {
                 "title": "Milti-Factor PIN",
                 "type": "number"
+            },
+            "googleAuth": {
+                "type": "object",
+                "properties": {
+                    "issueToken": {
+                        "title": "Issue Token URL",
+                        "type": "string"
+                    },
+                    "cookies": {
+                        "title": "Cookie Value",
+                        "type": "string"
+                    },
+                    "apiKey": {
+                        "title": "API Key",
+                        "type": "string"
+                    }
+                }
             }
         }
     }

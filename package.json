@@ -1,6 +1,6 @@
 {
   "name": "@hoobs/nest",
-  "version": "3.3.8",
+  "version": "3.5.2",
   "dependencies": {
     "bluebird": "^3.5.4",
     "eslint": "^5.16.0",
