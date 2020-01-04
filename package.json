@@ -1,36 +1,44 @@
 {
-  "name": "@hoobs/nest",
-  "version": "3.5.2",
-  "dependencies": {
-    "bluebird": "^3.5.4",
-    "eslint": "^5.16.0",
-    "lodash.debounce": "^4.0.8",
-    "promise-prompt": "^1.1.0",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/hoobs-org/homebridge-nest.git"
-  },
-  "deprecated": false,
-  "description": "Nest Thermostat and Protect integration for HOOBS",
-  "engines": {
-    "node": ">=7.0.0",
-    "homebridge": ">=0.4.22"
-  },
-  "keywords": [
-    "hoobs-certified",
-    "category_climate",
-    "category_security",
-    "hoobs-plugin",
-    "nest"
-  ],
-  "license": "ISC",
-  "preferGlobal": true,
-  "scripts": {
-    "lint": "eslint lib *.js",
-    "prepublishOnly": "npm run lint",
-    "preversion": "npm run lint"
-  }
+    "dependencies": {
+        "bluebird": "^3.5.4",
+        "eslint": "^5.16.0",
+        "lodash.debounce": "^4.0.8",
+        "promise-prompt": "^1.1.0",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/chrisjshull/homebridge-nest.git"
+    },
+    "deprecated": false,
+    "description": "Nest Thermostat and Protect plug-in for homebridge",
+    "engines": {
+        "homebridge": ">=0.2.5",
+        "node": ">=7.0.0"
+    },
+    "homepage": "https://github.com/chrisjshull/homebridge-nest#readme",
+    "keywords": [
+        "homebridge-plugin",
+        "nest"
+    ],
+    "license": "ISC",
+    "name": "@hoobs/nest",
+    "preferGlobal": true,
+    "scripts": {
+        "lint": "eslint lib *.js",
+        "prepublishOnly": "npm run lint",
+        "preversion": "npm run lint"
+    },
+    "version": "3.5.3",
+    "warnings": [
+        {
+            "code": "ENOTSUP",
+            "required": {
+                "node": ">=7.0.0",
+                "homebridge": ">=0.2.5"
+            },
+            "pkgid": "homebridge-nest@3.5.2"
+        }
+    ]
 }
