@@ -23,7 +23,7 @@
                 }
             },
             "pin": {
-                "title": "Milti-Factor PIN",
+                "title": "Multi-Factor PIN",
                 "type": "number"
             },
             "googleAuth": {
