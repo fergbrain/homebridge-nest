@@ -26,6 +26,10 @@
                 "title": "Multi-Factor PIN",
                 "type": "number"
             },
+            "access_token":{
+                "title": "Access Token",
+                "type": "string"
+            },
             "googleAuth": {
                 "type": "object",
                 "properties": {
